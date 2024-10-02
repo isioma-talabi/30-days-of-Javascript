@@ -1,0 +1,122 @@
+/* Landing Page Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Bricolage Grotesque", sans-serif;
+  --color-primary: #0096c7;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+}
+/* Nav Bar */
+ul > li {
+  list-style: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #ff7134;
+  padding: 2rem;
+}
+
+ul {
+  padding: 0;
+}
+
+/* Introductory Section */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.header__image {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.intro__text {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.first__container {
+  padding: 4rem;
+  background-color: var(--color-primary);
+}
+
+.socials {
+  width: 30px;
+}
+
+span {
+  display: flex;
+  gap: 20px;
+}
+
+.second__container {
+  background-color: var(--color-primary);
+}
+
+/* Project List */
+.third__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 50px;
+  /* justify-content: center; */
+  justify-items: center;
+}
+
+.widget_image {
+  height: 500px;
+  width: 500px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+  }
+
+  .first__container {
+    padding: 2rem;
+    width: 500px;
+  }
+
+  .second__container {
+    width: 500px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .intro__text {
+    font-size: 1rem;
+  }
+
+  .third__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+  }
+
+  .socials {
+    width: 20px;
+  }
+}
