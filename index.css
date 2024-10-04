@@ -23,6 +23,10 @@ ul > li {
   padding: 2rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   padding: 0;
 }
@@ -42,6 +46,14 @@ ul {
 
 h1 {
   font-size: 3rem;
+}
+
+#bball__heading {
+  color: black;
+}
+
+#bball__heading:hover {
+  color: #229ebc;
 }
 
 .intro__text {
@@ -90,7 +102,6 @@ span {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 50px;
   }
 
   .first__container {
@@ -111,12 +122,68 @@ span {
   }
 
   .third__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
   }
 
   .socials {
     width: 20px;
+  }
+
+  .header__image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .first__container {
+    padding: 1rem;
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  .second__container {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  .third__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .header__image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .widget_image {
+    height: 300px;
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+   p {
+    font-size: 14px;
+  }
+
+  .intro__text {
+    font-size: 13px;
+  }
+
+  ul > li {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .nobreak {
+    display: none;
   }
 }
