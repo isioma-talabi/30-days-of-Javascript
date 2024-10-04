@@ -75,9 +75,9 @@ button:hover {
   color: crimson;
 }
 
-/* Media Queries */
+/* Media Queries for Basketball Scorecard */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -93,12 +93,12 @@ button:hover {
     width: 300px;
     height: 150px;
     padding-top: 70px;
-    margin-left: 25px;
+    margin-left: 50px;
     margin-bottom: 20px;
   }
 
   .reset {
-    margin-left: 120px;
+    margin-left: 40px;
   }
 
   .buttons {

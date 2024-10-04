@@ -97,7 +97,7 @@ span {
   width: 500px;
 }
 
-/* Media Queries */
+/* Media Queries for homepage */
 @media screen and (max-width: 800px) {
   .wrapper {
     display: grid;
@@ -137,7 +137,7 @@ span {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .first__container {
     padding: 1rem;
     width: 300px;
