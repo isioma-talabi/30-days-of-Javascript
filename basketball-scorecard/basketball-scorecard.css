@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Cursed Timer ULiL";
   src: url(../assets/cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf);
@@ -81,29 +87,35 @@ button:hover {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 50px;
   }
 
   h3 {
     font-size: 30px;
+    margin: 20px;
   }
 
   .display {
     font-size: 90px;
-    width: 300px;
+    width: 250px;
     height: 150px;
-    padding-top: 70px;
-    margin-left: 50px;
-    margin-bottom: 20px;
+    padding-top: 35px;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .reset {
-    margin-left: 40px;
+    /* margin-left: 40px; */
   }
 
   .buttons {
     display: flex;
-    gap: 10px;
-    justify-content: space-evenly;
+    gap: 50px;
+    /* justify-content: space-evenly; */
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
   }
 }
