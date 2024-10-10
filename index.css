@@ -60,6 +60,14 @@ h1 {
   color: #229ebc;
 }
 
+#blackjack__heading {
+  color: black;
+}
+
+#blackjack__heading:hover {
+  color: #397a5c;
+}
+
 .intro__text {
   font-size: 1.5rem;
 }

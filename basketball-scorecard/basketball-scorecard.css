@@ -104,10 +104,6 @@ button:hover {
     margin-bottom: 30px;
   }
 
-  .reset {
-    /* margin-left: 40px; */
-  }
-
   .buttons {
     display: flex;
     gap: 50px;

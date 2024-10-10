@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./blackjackgame.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+
+<body>
+
+    <section class="main__page">
+        <div class="blackjack__game">
+            <h1>A Game of Blackjack</h1>
+            <p>Can you win a game of Blackjack?</p>
+            <p class="guide__text">To win, you have to draw random cards that sum up to 21. First
+                start the game and draw a new card till you win or... lose! <br><br> Refresh page to start a new round!
+            </p>
+            <p id="message-el">Play a round!</p>
+            <p id="game-cards">Cards: </p>
+            <p id="game-sum">Sum: </p>
+
+            <div class="button__wrapper">
+                <button id="button">START GAME</button>
+                <button id="new-card"> NEW CARD </button>
+            </div>
+
+            <p id="player-stats"></p>
+        </div>
+
+        <div class="main__image">
+            <img src="../assets/BlackJack.jpg" alt="Picture of a winning Joker Card">
+        </div>
+    </section>
+
+
+    <script src="blackjackgame.js"></script>
+
+    <!-- confetti script -->
+
+</body>
+
+</html>
