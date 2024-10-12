@@ -68,6 +68,14 @@ h1 {
   color: #397a5c;
 }
 
+#pword__heading {
+  color: black;
+}
+
+#pword__heading:hover {
+  color: #c56a18;
+}
+
 .intro__text {
   font-size: 1.5rem;
 }
