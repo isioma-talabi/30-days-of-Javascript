@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Container Styles */
+.main-wrapper {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.first-container {
+  margin-top: 40px;
+  background-color: white;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid gray;
+  border-bottom: none;
+  padding: 10px;
+}
+
+.second-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+  border: 1px solid gray;
+  border-top: none;
+  padding: 20px;
+}
+
+hr {
+  width: 300px;
+  background-color: #eee8e3;
+  height: 1px;
+  border: none;
+}
+
+/* Working stage section styles */
+
+#working-stage {
+  background-color: #eee8e3;
+  margin-top: 20px;
+  height: 100px;
+  padding: 35px 10px;
+  font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  border-radius: 10px;
+  text-align: right;
+  
+}
+
+#preview-result {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #eee8e3;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  text-align: right;
+}
+
+#other-controls {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+#unit-converter-btn {
+    margin-left: 20px;
+}
+
+
+
+
+/* Main Calculator Button Styles */
+button {
+  border-radius: 60px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin-left: 12px;
+  font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #82522f;
+  background-color: #eee8e3;
+}
+
+#clear-btn {
+  color: #c46252;
+}
+
+#bracket-btn,
+#percentage-btn,
+#division-btn,
+#multiplication-btn,
+#minus-btn,
+#plus-btn {
+  color: #7e4b8f;
+}
+
+#equals-btn {
+  background-color: #b07cbf;
+  color: #eee8e3;
+}

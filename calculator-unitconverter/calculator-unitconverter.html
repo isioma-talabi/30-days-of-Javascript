@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator & Unit Converter</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts: Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./calculator-unitconverter.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="first-container">
+
+            <div id="working-stage"></div>
+            <div id="preview-result"></div>
+            <div id="other-controls">
+                <div>
+                    <img id="history-btn" src="../assets/history-icon2.png" width="30px">
+                    <img id="unit-converter-btn" src="../assets/ruler-icon2.png" width="30px" alt="">
+                </div>
+
+                <div>
+                    <img id="delete-btn" src="../assets/back-arrow-2.png" width="30px" alt="">
+                </div>
+
+            </div>
+
+            <hr>
+
+        </div>
+
+
+        <div class="second-container">
+
+
+            <!-- First row of buttons -->
+            <button id="clear-btn">C</button>
+            <button id="bracket-btn">( )</button>
+            <button id="percentage-btn">%</button>
+            <button id="division-btn">/</button>
+
+            <!-- Second row of buttons -->
+            <button id="seven-btn">7</button>
+            <button id="eight-btn">8</button>
+            <button id="nine-btn">9</button>
+            <button id="multiplication-btn">X</button>
+
+            <!-- Third row of buttons -->
+            <button id="four-btn">4</button>
+            <button id="five-btn">5</button>
+            <button id="six-btn">6</button>
+            <button id="minus-btn">-</button>
+
+            <!-- Fourth row of buttons -->
+            <button id="one-btn">1</button>
+            <button id="two-btn">2</button>
+            <button id="three-btn">3</button>
+            <button id="plus-btn">+</button>
+
+            <!-- Fifth row of buttons -->
+            <button id="plus-minus-btn">+/-</button>
+            <button id="zero-btn">0</button>
+            <button id="point-btn">.</button>
+            <button id="equals-btn">=</button>
+        </div>
+    </div>
+    <script src="calculator-unitconverter.js"></script>
+</body>
+
+</html>
