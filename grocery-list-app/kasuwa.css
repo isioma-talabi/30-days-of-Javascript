@@ -62,7 +62,7 @@ input {
   padding: 20px;
   font-family: var(--body-font);
   font-size: 18px;
-  color: #919191;
+  color: #242323;
   background-color: #d9d9d9;
 }
 
@@ -83,4 +83,42 @@ button {
     height: 600px;
     margin-top: 10px;
     border-radius: 8px;
+    padding: 20px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+/* Styling elements created with Javascript */
+
+li {
+  list-style: none;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.style-btn {
+  position: relative;
+  top: 5px;
+  height: 20px;
+  margin-left: 20px;
+}
+
+.inline-edit-input {
+  width: 200px;
+  height: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  background-color: white;
+  color: var(--primary-color);
+  padding: 15px;
+}
+
+.inline-edit-input:focus {
+  border: 1px solid var(--primary-color);
+  outline: none;
 }
