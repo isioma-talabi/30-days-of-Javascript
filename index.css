@@ -52,6 +52,10 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  color: black;
+}
+
 #bball__heading {
   color: black;
 }
@@ -114,6 +118,10 @@ span {
 
 .widget_image {
   height: 500px;
+  width: 500px;
+}
+
+.widget {
   width: 500px;
 }
 
@@ -219,5 +227,9 @@ span {
 
   .nobreak {
     display: none;
+  }
+
+  .widget {
+    width: 300px;
   }
 }
