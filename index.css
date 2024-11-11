@@ -80,6 +80,10 @@ h2 {
   color: #c56a18;
 }
 
+#kasuwa-heading:hover {
+  color: #699f3a;
+}
+
 .intro__text {
   font-size: 1.5rem;
 }
