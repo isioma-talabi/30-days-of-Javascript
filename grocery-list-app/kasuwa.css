@@ -26,7 +26,7 @@ body {
 }
 
 .logo-page {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .logo {
@@ -78,16 +78,22 @@ button {
 }
 
 #grocery-list {
-    background-color: white;
-    width: 579px;
-    height: 600px;
-    margin-top: 10px;
-    border-radius: 8px;
-    padding: 20px;
+  background-color: white;
+  width: 579px;
+  height: 600px;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 20px;
 }
 
 ul {
   padding-left: 0;
+}
+
+/* Hidden for mobile */
+
+.logo-page-mobile {
+  display: none;
 }
 
 /* Styling elements created with Javascript */
@@ -98,7 +104,6 @@ li {
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .style-btn {
@@ -115,10 +120,100 @@ li {
   font-size: 12px;
   background-color: white;
   color: var(--primary-color);
-  padding: 15px;
+  padding: 10px;
 }
 
 .inline-edit-input:focus {
   border: 1px solid var(--primary-color);
   outline: none;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 500px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .grocery-page {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .logo-page {
+    display: none;
+  }
+
+  .logo-page-mobile {
+    display: block;
+    width: 200px;
+    height: 100px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    gap: 5px;
+    padding: 0;
+  }
+  .logo {
+    object-fit: cover;
+    height: 100px;
+    margin-left: 0;
+    position: relative;
+    left: 155px;
+    margin-top: 5px;
+  }
+
+  h1 {
+    font-size: 30px;
+    width: 20px;
+    margin: 0 auto;
+    bottom: 15px;
+    left: 65px;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 35px;
+  }
+  #grocery-list {
+    width: 400px;
+    height: 650px;
+    
+  }
+
+  input {
+    width: 280px;
+    font-size: 12px;
+  }
+
+  button {
+    width: 116px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+#grocery-list {
+    width: 380px;
+    height: 650px;
+  }
+
+  button {
+width: 125px;
+  }
+
+  input {
+    width: 250px;
+  }
+
+   .grocery-page {
+    width: 390px;
+    margin-left: 5px;
+  }
+
 }
