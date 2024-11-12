@@ -74,16 +74,17 @@ button {
   border-radius: 8px;
   font-family: var(--body-font);
   font-size: 18px;
-  color: #8d7539;
+  color: whitesmoke;
 }
 
 #grocery-list {
   background-color: white;
   width: 579px;
-  height: 600px;
+  min-height: 600px; /* Limits the height but allows the list to grow */
   margin-top: 10px;
   border-radius: 8px;
   padding: 20px;
+  overflow-y: auto; /* Adds scroll when the list exceeds max height */
 }
 
 ul {
@@ -126,6 +127,15 @@ li {
 .inline-edit-input:focus {
   border: 1px solid var(--primary-color);
   outline: none;
+}
+
+.alert-user::placeholder {
+  color: red; /* Change to your desired color */
+  opacity: 1; /* Optional: Ensures the placeholder color is fully opaque */
+}
+
+.remove-alert-user::placeholder {
+  color: #757575;
 }
 
 /* Media Queries for Mobile Devices */
@@ -183,7 +193,6 @@ li {
   #grocery-list {
     width: 400px;
     height: 650px;
-    
   }
 
   input {
@@ -198,22 +207,21 @@ li {
 }
 
 @media screen and (max-width: 390px) {
-#grocery-list {
+  #grocery-list {
     width: 380px;
     height: 650px;
   }
 
   button {
-width: 125px;
+    width: 125px;
   }
 
   input {
     width: 250px;
   }
 
-   .grocery-page {
+  .grocery-page {
     width: 390px;
     margin-left: 5px;
   }
-
 }

@@ -80,13 +80,29 @@ function createGroceryItem() {
 // Event Listener for Add Item Button
 
 addItemButton.addEventListener("click", function () {
-  createGroceryItem();
-  groceryInput.value = "";
+  if (!groceryInput.value.trim()) {
+    groceryInput.placeholder = "Add a grocery item";
+    groceryInput.classList.add("alert-user");
+  } else {
+    createGroceryItem();
+    groceryInput.placeholder = "e.g. Hot Chilli Peppers";
+    groceryInput.classList.add("remove-alert-user");
+    groceryInput.value = "";
+  }
 });
 
-addItemButton.addEventListener("keydown", (event) => {
+// Fun note: "keydown" vents are more commonly listened for on input fields or the entire document.
+
+groceryInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
-    createGroceryItem();
-    groceryInput.value = "";
+    if (!groceryInput.value.trim()) {
+      groceryInput.placeholder = "Add a grocery item";
+      groceryInput.classList.add("alert-user");
+    } else {
+      createGroceryItem();
+      groceryInput.placeholder = "e.g. Hot Chilli Peppers";
+      groceryInput.classList.add("remove-alert-user");
+      groceryInput.value = "";
+    }
   }
 });
